@@ -1,0 +1,27 @@
+<html>
+    <body style="background-color: lightgray; margin-left: 50px; margin-top: 50px;">
+        <p>Kata-kata bijak hari ini: </p> 
+        <button onclick="tampilkan()">Munculkan</button>
+        <div id="nemo"></div>
+        <script>
+            const bijak = [
+                "Kesalahan itu guru terbaik, jangan pernah menyerah ketika menghadapinya.",
+                "Keberhasilan tidak datang sendiri, namun dengan kerja keras serta ketekunan.",
+                "Tumbuhlah bersama dengan kegagalanmu, karena itulah yang akan membuatmu semakin kuat.",
+                "Ketabahan merupakan kunci untuk mengatasi setiap rintangan.",
+                "Bermimpilah yang besar dan selalu berani untuk gagal.",
+                "Kegagalan adalah kunci kesuksesan yang sesungguhnya.",
+                "Jangan pernah berhenti ketika kamu lelah, berhentilah ketika kamu telah selesai.",
+                "Kesulitan yang sebenarnya ialah mengatasi caramu berpikir mengenai diri kamu sendiri.",
+                "Tidak ada kata tidak mungkin, sebelum kamu sempat mencobanya.",
+                "Kemana pun diri kamu pergi, lakukanlah segala sesuatu dengan segenap hati."
+            ];
+            function tampilkan() {
+                const indexAcak = Math.floor(Math.random() * bijak.length);
+                const kataAcak = bijak[indexAcak];
+                
+                document.getElementById("nemo").innerText = kataAcak;
+            }
+        </script>
+    </body>
+</html>
